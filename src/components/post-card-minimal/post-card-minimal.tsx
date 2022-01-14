@@ -1,7 +1,7 @@
-import * as React from 'react';
-import { Link } from 'gatsby';
-import _ from 'lodash';
-import GatsbyImage from '../gatsby-image';
+import * as React from "react";
+import { Link } from "gatsby";
+import _ from "lodash";
+import GatsbyImage from "../gatsby-image";
 import {
   PostCardWrapper,
   PostPreview,
@@ -13,7 +13,7 @@ import {
   PostTags,
   PostDateAndPreview,
   ReadMore,
-} from './post-card-minimal.style';
+} from "./post-card-minimal.style";
 
 interface PostCardMinimalProps {
   image?: any;
@@ -36,7 +36,7 @@ const PostCardMinimal: React.FunctionComponent<PostCardMinimalProps> = ({
   ...props
 }) => {
   // Add all classs to an array
-  const addAllClasses = ['post_card'];
+  const addAllClasses = ["post_card"];
 
   // className prop checking
   if (className) {
@@ -44,7 +44,7 @@ const PostCardMinimal: React.FunctionComponent<PostCardMinimalProps> = ({
   }
 
   return (
-    <PostCardWrapper className={addAllClasses.join(' ')} {...props}>
+    <PostCardWrapper className={addAllClasses.join(" ")} {...props}>
       <PostDetails className="post_details">
         <PostDateAndPreview>
           {date && (

@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
 
 export const FeaturedCardWrapper = styled.div`
   position: relative;
@@ -25,7 +25,7 @@ export const FeaturedCardWrapper = styled.div`
       }
     }
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       width: 100%;
       height: 100%;
@@ -51,7 +51,7 @@ export const FeaturedCardWrapper = styled.div`
     }
     .post_title {
       font-size: 15px;
-      font-family: 'Fira Sans', sans-serif;
+      font-family: "Fira Sans", sans-serif;
       line-height: 1.4;
       margin-bottom: 18px;
       a {
@@ -120,7 +120,7 @@ export const ReadMore = styled.div`
   a {
     font-size: 13px;
     font-weight: 700;
-    color: ${themeGet('colors.textColor', '#292929')};
+    color: ${themeGet("colors.textColor", "#292929")};
     text-decoration: underline;
   }
 `;
@@ -128,10 +128,10 @@ export const ReadMore = styled.div`
 export const PostTitle = styled.h2`
   font-size: 21px;
   font-weight: 700;
-  color: ${themeGet('colors.textColor', '#292929')};
+  color: ${themeGet("colors.textColor", "#292929")};
   margin-bottom: 10px;
   a {
-    color: ${themeGet('colors.textColor', '#292929')};
+    color: ${themeGet("colors.textColor", "#292929")};
   }
   @media (max-width: 1400px) {
     font-size: 18px;
@@ -164,7 +164,7 @@ export const PostTags = styled.div`
     margin-right: 20px;
     font-size: 13px;
     font-weight: 400;
-    color: ${themeGet('primary', '#D10068')};
+    color: ${themeGet("primary", "#D10068")};
     @media (max-width: 990px) {
       font-size: 13px;
       margin-right: 15px;
@@ -173,8 +173,8 @@ export const PostTags = styled.div`
 `;
 
 export const Excerpt = styled.p`
-  font-size: ${themeGet('fontSizes.3', '15')}px;
-  color: ${themeGet('textColor', '#292929')};
+  font-size: ${themeGet("fontSizes.3", "15")}px;
+  color: ${themeGet("textColor", "#292929")};
   font-weight: 400;
   line-height: 2;
   margin-bottom: 30px;

@@ -1,43 +1,49 @@
-import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import GatsbyImage from '../../../components/gatsby-image';
-import SocialProfile from '../../../components/social-profile/social-profile';
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import GatsbyImage from "../../../components/gatsby-image";
+import SocialProfile from "../../../components/social-profile/social-profile";
 import {
   IntroWrapper,
   IntroImage,
   IntroTitle,
-  Desciption,
+  Description,
   IntroInfo,
-} from './style';
+} from "./style";
 import {
-  IoLogoFacebook,
   IoLogoTwitter,
   IoLogoInstagram,
   IoLogoGithub,
-} from 'react-icons/io';
+  IoLogoReddit,
+} from "react-icons/io";
+import { ImStackoverflow } from "react-icons/im";
 
 type IntroProps = {};
 
 const SocialLinks = [
   {
-    icon: <IoLogoFacebook />,
-    url: '#',
-    tooltip: 'Facebook',
-  },
-  {
     icon: <IoLogoInstagram />,
-    url: '#',
-    tooltip: 'Instagram',
+    url: "https://www.instagram.com/allanjeo",
+    tooltip: "Instagram",
   },
   {
     icon: <IoLogoTwitter />,
-    url: '#',
-    tooltip: 'Twitter',
+    url: "https://twitter.com/allan_jeo",
+    tooltip: "Twitter",
   },
   {
     icon: <IoLogoGithub />,
-    url: '#',
-    tooltip: 'Github',
+    url: "https://github.com/raveracker",
+    tooltip: "Github",
+  },
+  {
+    icon: <IoLogoReddit />,
+    url: "https://www.reddit.com/user/Secure-Letterhead-39",
+    tooltip: "Reddit",
+  },
+  {
+    icon: <ImStackoverflow />,
+    url: "https://stackoverflow.com/users/12510072/allan-joseph",
+    tooltip: "Stack Overflow",
   },
 ];
 
@@ -65,6 +71,15 @@ const Intro: React.FunctionComponent<IntroProps> = () => {
   const { author, about } = Data.site.siteMetadata;
   const AuthorImage = Data.avatar.childImageSharp.gatsbyImageData;
 
+  const description = (
+    <p>
+      {about}
+      <a href="https://www.procedure.tech" target="_blank">
+        procedure.tech
+      </a>
+    </p>
+  );
+
   return (
     <IntroWrapper>
       <IntroImage>
@@ -74,7 +89,7 @@ const Intro: React.FunctionComponent<IntroProps> = () => {
         <IntroTitle>
           Hey! I’m <b>{author}</b>
         </IntroTitle>
-        <Desciption>{about}</Desciption>
+        <Description>{description}</Description>
         <SocialProfile items={SocialLinks} />
       </IntroInfo>
     </IntroWrapper>

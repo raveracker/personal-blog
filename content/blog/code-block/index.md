@@ -1,8 +1,8 @@
 ---
 title: React-Live & Code example
-date: '2019-05-26'
-tags: ['js', 'code', 'react']
-cover: './preview.jpg'
+date: "2019-05-26"
+tags: ["js", "code", "react"]
+cover: "./preview.jpg"
 ---
 
 There are a few cases where it might make sense to modify the “back” button’s behavior. For example, if you build a page where you choose something, then see an “are you sure?” page to make sure it’s what you really wanted, and finally see a confirmation page, it may be desirable to skip the “are you sure?” page if the “back” button is clicked.
@@ -29,10 +29,10 @@ There’s so many poorly chosen words in that sentence. Now, when you do this wi
     <Link to={url}>{title}</Link>
   </PostTitle>
   {overlay == true ? (
-    ''
+    ""
   ) : (
     <>
-      {' '}
+      {" "}
       {description && (
         <Excerpt
           dangerouslySetInnerHTML={{
@@ -45,7 +45,7 @@ There’s so many poorly chosen words in that sentence. Now, when you do this wi
   )}
 
   <ReadMore className="read_more">
-    <Link to={url}>{overlay == true ? 'Read Story' : 'Read More'}</Link>
+    <Link to={url}>{overlay == true ? "Read Story" : "Read More"}</Link>
   </ReadMore>
 </PostDetails>
 ```

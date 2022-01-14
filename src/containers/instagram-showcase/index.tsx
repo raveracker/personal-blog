@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 import InstShowcaseWrapper, {
   InstashowcaseCol,
   InstashowcaseRow,
   ShowcaseTitle,
-} from './style';
-import InstagramGrid from '../../components/instagram-grid/instagram-grid';
-import { IoLogoInstagram } from 'react-icons/io';
-import useInstagram from '../../hooks/use-instagram';
+} from "./style";
+import InstagramGrid from "../../components/instagram-grid/instagram-grid";
+import { IoLogoInstagram } from "react-icons/io";
+import useInstagram from "../../hooks/use-instagram";
 
 interface ShowcaseProps {}
 
@@ -18,9 +18,9 @@ const InstagramShowcase: React.FunctionComponent<ShowcaseProps> = () => {
       <ShowcaseTitle>
         <IoLogoInstagram
           style={{
-            display: 'block',
-            marginRight: '12px',
-            fontSize: '20px',
+            display: "block",
+            marginRight: "12px",
+            fontSize: "20px",
           }}
         />
         Me On Instagram

@@ -1,7 +1,7 @@
-import * as React from 'react';
-import { Link } from 'gatsby';
-import _ from 'lodash';
-import GatsbyImage from '../gatsby-image';
+import * as React from "react";
+import { Link } from "gatsby";
+import _ from "lodash";
+import GatsbyImage from "../gatsby-image";
 import {
   PostListWrapper,
   PostPreview,
@@ -10,7 +10,7 @@ import {
   PostMeta,
   PostDate,
   PostTags,
-} from './post-list.style';
+} from "./post-list.style";
 
 interface PostListProps {
   image?: any;
@@ -31,7 +31,7 @@ const PostList: React.FunctionComponent<PostListProps> = ({
   ...props
 }) => {
   // Add all classs to an array
-  const addAllClasses = ['post_list'];
+  const addAllClasses = ["post_list"];
 
   // className prop checking
   if (className) {
@@ -39,7 +39,7 @@ const PostList: React.FunctionComponent<PostListProps> = ({
   }
 
   return (
-    <PostListWrapper className={addAllClasses.join(' ')} {...props}>
+    <PostListWrapper className={addAllClasses.join(" ")} {...props}>
       <Link to={url}>
         {image == null ? null : (
           <PostPreview className="post_preview">

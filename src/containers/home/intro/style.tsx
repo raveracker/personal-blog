@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
 
 export const IntroWrapper = styled.div`
   width: 940px;
@@ -30,7 +30,7 @@ export const IntroImage = styled.div`
   padding: 30px;
   border-radius: 50%;
   margin: 0 auto;
-  border: 1px solid ${themeGet('colors.lightBorderColor', '#ededed')};
+  border: 1px solid ${themeGet("colors.lightBorderColor", "#ededed")};
   flex-shrink: 0;
   @media (max-width: 990px) {
     width: 220px;
@@ -56,8 +56,8 @@ export const IntroImage = styled.div`
 export const IntroTitle = styled.h1`
   font-size: 30px;
   font-weight: 400;
-  font-family: ${themeGet('fontFamily.1', "'Poppins', sans-serif")};
-  color: ${themeGet('colors.textColor', '#292929')};
+  font-family: ${themeGet("fontFamily.1", "'Poppins', sans-serif")};
+  color: ${themeGet("colors.textColor", "#292929")};
   margin-bottom: 20px;
   @media (max-width: 990px) {
     font-size: 26px;
@@ -68,10 +68,10 @@ export const IntroTitle = styled.h1`
   }
 `;
 
-export const Desciption = styled.p`
-  color: ${themeGet('colors.textColor', '#292929')};
-  font-size: ${themeGet('fontSizes.3', '15')}px;
-  line-height: ${themeGet('lineHeights.text', '2')};
+export const Description = styled.div`
+  color: ${themeGet("colors.textColor", "#292929")};
+  font-size: ${themeGet("fontSizes.3", "15")}px;
+  line-height: ${themeGet("lineHeights.text", "2")};
 `;
 
 export const IntroInfo = styled.div`

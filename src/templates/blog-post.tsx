@@ -1,24 +1,24 @@
-import React from 'react';
-import { graphql, Link } from 'gatsby';
-import _ from 'lodash';
-import urljoin from 'url-join';
-import { DiscussionEmbed } from 'disqus-react';
-import Layout from '../components/layout';
-import SEO from '../components/seo';
-import PostCard from '../components/post-card/post-card';
-import PostDetails from '../components/post-details/post-details';
+import React from "react";
+import { graphql, Link } from "gatsby";
+import _ from "lodash";
+import urljoin from "url-join";
+import { DiscussionEmbed } from "disqus-react";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import PostCard from "../components/post-card/post-card";
+import PostDetails from "../components/post-details/post-details";
 import {
   FacebookShareButton,
   TwitterShareButton,
   PinterestShareButton,
   RedditShareButton,
-} from 'react-share';
+} from "react-share";
 import {
   IoLogoFacebook,
   IoLogoTwitter,
   IoLogoPinterest,
   IoLogoReddit,
-} from 'react-icons/io';
+} from "react-icons/io";
 import {
   BlogPostDetailsWrapper,
   RelatedPostWrapper,
@@ -29,7 +29,7 @@ import {
   PostShare,
   PostTags,
   BlogPostComment,
-} from './templates.style';
+} from "./templates.style";
 
 const BlogPostTemplate = (props: any) => {
   const post = props.data.markdownRemark;
@@ -63,7 +63,7 @@ const BlogPostTemplate = (props: any) => {
         />
 
         <BlogPostFooter
-          className={post.frontmatter.cover == null ? 'center' : ''}
+          className={post.frontmatter.cover == null ? "center" : ""}
         >
           {post.frontmatter.tags == null ? null : (
             <PostTags className="post_tags">
@@ -97,7 +97,7 @@ const BlogPostTemplate = (props: any) => {
           </PostShare>
         </BlogPostFooter>
         <BlogPostComment
-          className={post.frontmatter.cover == null ? 'center' : ''}
+          className={post.frontmatter.cover == null ? "center" : ""}
         >
           <DiscussionEmbed {...disqusConfig} />
         </BlogPostComment>

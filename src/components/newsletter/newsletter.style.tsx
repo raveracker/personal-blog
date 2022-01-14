@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
-import NewsletterBG from '../../images/newsletter-bg.webp';
+import styled from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
+import NewsletterBG from "../../images/newsletter-bg.webp";
 
 export const NewsletterWrapper = styled.div`
   margin: 0 auto;
@@ -56,10 +56,10 @@ export const NewsletterInnerWrapper = styled.div`
 
 export const NewsletterTitle = styled.h1`
   font-size: 30px;
-  color: ${themeGet('colors.textColor', '#292929')};
-  font-weight: ${themeGet('fontWeights.6', '700')};
+  color: ${themeGet("colors.textColor", "#292929")};
+  font-weight: ${themeGet("fontWeights.6", "700")};
   margin-bottom: 20px;
-  font-family: ${themeGet('fontFamily.0', "'Fira Sans',sans-serif")};
+  font-family: ${themeGet("fontFamily.0", "'Fira Sans',sans-serif")};
   @media (max-width: 1200px) {
     font-size: 26px;
   }
@@ -73,10 +73,10 @@ export const NewsletterTitle = styled.h1`
 `;
 
 export const NewsletterDescription = styled.p`
-  font-size: ${themeGet('fontSizes.3', '15')}px;
-  line-height: ${themeGet('lineHeights.text', '2')};
-  font-weight: ${themeGet('fontWeights.3', '400')};
-  color: ${themeGet('colors.textColor', '#292929')};
+  font-size: ${themeGet("fontSizes.3", "15")}px;
+  line-height: ${themeGet("lineHeights.text", "2")};
+  font-weight: ${themeGet("fontWeights.3", "400")};
+  color: ${themeGet("colors.textColor", "#292929")};
   margin: 0;
   @media (max-width: 1200px) {
     font-size: 14px;
@@ -114,7 +114,7 @@ export const NewsletterInputWrapper = styled.form`
     .inner-wrap {
       input {
         border-width: 0 0 1px 0;
-        border-color: ${themeGet('colors.textColor', '#292929')};
+        border-color: ${themeGet("colors.textColor", "#292929")};
       }
     }
   }

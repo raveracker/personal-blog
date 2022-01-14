@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
 
 export const FeaturedPostWrapper = styled.div`
   margin: 0 auto;
@@ -42,16 +42,16 @@ export const FeaturedPostCol = styled.div`
 `;
 
 export const SecTitle = styled.div`
-  color: ${themeGet('colors.textColor', '#292929')};
+  color: ${themeGet("colors.textColor", "#292929")};
   font-size: 16px;
   font-weight: 500;
-  font-family: ${themeGet('fontFamily.0', "'Fira Sans',sans-serif")};
+  font-family: ${themeGet("fontFamily.0", "'Fira Sans',sans-serif")};
   letter-spacing: 0.17em;
   position: relative;
   margin-bottom: 30px;
 
   &:after {
-    content: '';
+    content: "";
     width: 68px;
     height: 1px;
     background: #292929;

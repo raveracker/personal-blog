@@ -1,14 +1,14 @@
-import * as React from 'react';
-import GatsbyImage from '../../components/gatsby-image';
-import { useStaticQuery, graphql, Link } from 'gatsby';
-import { IoMdArrowRoundBack } from 'react-icons/io';
+import * as React from "react";
+import GatsbyImage from "../../components/gatsby-image";
+import { useStaticQuery, graphql, Link } from "gatsby";
+import { IoMdArrowRoundBack } from "react-icons/io";
 import {
   NotFoundWrapper,
   NotFoundContent,
   NotFoundImage,
   Goback,
   Icon,
-} from './style';
+} from "./style";
 
 interface NotFoundProps {}
 
@@ -51,7 +51,10 @@ const NotFound: React.FunctionComponent<NotFoundProps> = () => {
         </Goback>
       </NotFoundContent>
       <NotFoundImage>
-        <GatsbyImage src={Data.avatar.childImageSharp.gatsbyImageData} alt="not found" />
+        <GatsbyImage
+          src={Data.avatar.childImageSharp.gatsbyImageData}
+          alt="not found"
+        />
       </NotFoundImage>
     </NotFoundWrapper>
   );

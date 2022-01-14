@@ -1,10 +1,10 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import PostCardMinimal from '../components/post-card-minimal/post-card-minimal';
-import Pagination from '../components/pagination/pagination';
-import Layout from '../components/layout';
-import SEO from '../components/seo';
-import { BlogPostsWrapper } from './templates.style';
+import React from "react";
+import { graphql } from "gatsby";
+import PostCardMinimal from "../components/post-card-minimal/post-card-minimal";
+import Pagination from "../components/pagination/pagination";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import { BlogPostsWrapper } from "./templates.style";
 export const pageQuery = graphql`
   query BlogListQuery($skip: Int!, $limit: Int!) {
     site {
@@ -54,7 +54,7 @@ const BlogList = (props: any) => {
   const isFirst = currentPage === 1;
   const isLast = currentPage === numPages;
   const prevPage =
-    currentPage - 1 === 1 ? '/page/1' : `/page/${(currentPage - 1).toString()}`;
+    currentPage - 1 === 1 ? "/page/1" : `/page/${(currentPage - 1).toString()}`;
   const nextPage = `/page/${(currentPage + 1).toString()}`;
   const PrevLink = !isFirst && prevPage;
   const NextLink = !isLast && nextPage;

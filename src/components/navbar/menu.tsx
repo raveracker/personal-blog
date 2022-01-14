@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import { MenuItemWrapper, MenuItem } from './navbar.style';
+import React from "react";
+import { Link } from "gatsby";
+import { MenuItemWrapper, MenuItem } from "./navbar.style";
 
 type MenuProps = {
   items: MenuItemsProps[];
@@ -19,7 +19,7 @@ const Menu: React.FunctionComponent<MenuProps> = ({
   ...props
 }) => {
   // Add all classs to an array
-  const addAllClasses = ['menu'];
+  const addAllClasses = ["menu"];
 
   // className prop checking
   if (className) {
@@ -27,7 +27,7 @@ const Menu: React.FunctionComponent<MenuProps> = ({
   }
 
   return (
-    <MenuItemWrapper className={addAllClasses.join(' ')} {...props}>
+    <MenuItemWrapper className={addAllClasses.join(" ")} {...props}>
       {items.map((item, index) => (
         <MenuItem key={index}>
           {item.external ? (

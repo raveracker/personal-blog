@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
 
 export const AboutWrapper = styled.div`
   position: relative;
@@ -20,7 +20,7 @@ export const AboutPageTitle = styled.div`
   h2 {
     font-size: 30px;
     font-weight: 700;
-    color: ${themeGet('colors.textColor', '#292929')};
+    color: ${themeGet("colors.textColor", "#292929")};
     line-height: 1.53;
     margin-bottom: 10px;
     @media (max-width: 990px) {
@@ -51,7 +51,7 @@ export const AboutDetails = styled.div`
   h2 {
     font-size: 21px;
     font-weight: 500;
-    color: ${themeGet('colors.textColor', '#292929')};
+    color: ${themeGet("colors.textColor", "#292929")};
     margin-bottom: 40px;
     @media (max-width: 990px) {
       margin-bottom: 30px;
@@ -70,7 +70,7 @@ export const SocialProfiles = styled.div`
   }
 
   &:before {
-    content: '';
+    content: "";
     width: 30px;
     height: 1px;
     background: #292929;

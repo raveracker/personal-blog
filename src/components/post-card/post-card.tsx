@@ -1,7 +1,7 @@
-import * as React from 'react';
-import { Link } from 'gatsby';
-import _ from 'lodash';
-import GatsbyImage from '../gatsby-image';
+import * as React from "react";
+import { Link } from "gatsby";
+import _ from "lodash";
+import GatsbyImage from "../gatsby-image";
 import {
   PostCardWrapper,
   PostPreview,
@@ -11,7 +11,7 @@ import {
   Excerpt,
   PostContent,
   PostTags,
-} from './post-card.style';
+} from "./post-card.style";
 
 interface PostCardProps {
   image?: any;
@@ -34,7 +34,7 @@ const PostCard: React.FunctionComponent<PostCardProps> = ({
   ...props
 }) => {
   // Add all classs to an array
-  const addAllClasses = ['post_card'];
+  const addAllClasses = ["post_card"];
 
   // className prop checking
   if (className) {
@@ -42,7 +42,7 @@ const PostCard: React.FunctionComponent<PostCardProps> = ({
   }
 
   return (
-    <PostCardWrapper className={addAllClasses.join(' ')} {...props}>
+    <PostCardWrapper className={addAllClasses.join(" ")} {...props}>
       {image == null ? null : (
         <PostPreview className="post_preview">
           <Link to={url}>

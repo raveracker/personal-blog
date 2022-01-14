@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
 
 const InstShowcaseWrapper = styled.div`
   padding: 120px 75px 0 75px;
@@ -36,12 +36,12 @@ export const InstashowcaseCol = styled.div`
 export const ShowcaseTitle = styled.h2`
   font-size: 15px;
   font-weight: 400;
-  color: ${themeGet('colors.textColor', '#292929')};
+  color: ${themeGet("colors.textColor", "#292929")};
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-  font-family: ${themeGet('fontFamily.0', "'Fira Sans',sans-serif")};
+  font-family: ${themeGet("fontFamily.0", "'Fira Sans',sans-serif")};
   @media (max-width: 575px) {
     margin-bottom: 20px;
   }

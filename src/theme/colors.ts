@@ -11,6 +11,6 @@ const colors = {
   lightBorderColor: "#ededed", //9
   primary: "#D10068", // 10
   primaryHover: "#D10068", // 11
-}
+};
 
-export default colors
+export default colors;

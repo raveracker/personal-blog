@@ -1,10 +1,10 @@
-import * as React from 'react';
+import * as React from "react";
 import {
   InstagramGridWrapper,
   PostImage,
   PostMeta,
   Overlay,
-} from './instagram-grid.style';
+} from "./instagram-grid.style";
 
 type InstagramGridProps = {
   image: string;
@@ -22,7 +22,7 @@ const InstagramGrid: React.FunctionComponent<InstagramGridProps> = ({
       <a href={url}>
         <Overlay />
         <PostImage>
-          <img src={image} alt={alt || 'instagram-image'} />
+          <img src={image} alt={alt || "instagram-image"} />
         </PostImage>
       </a>
     </InstagramGridWrapper>

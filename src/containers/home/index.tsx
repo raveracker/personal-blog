@@ -1,8 +1,8 @@
-import * as React from 'react';
-import PersonalBlogWrapper from './style';
-import Intro from './intro';
-import Posts from './posts';
-import FeaturedPosts from './featured-post';
+import * as React from "react";
+import PersonalBlogWrapper from "./style";
+import Intro from "./intro";
+import Posts from "./posts";
+import FeaturedPosts from "./featured-post";
 
 type PersonalBlogProps = {};
 

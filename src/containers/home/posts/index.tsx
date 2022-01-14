@@ -1,8 +1,8 @@
-import * as React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import PostCardMinimal from '../../../components/post-card-minimal/post-card-minimal';
-import Pagination from '../../../components/pagination/pagination';
-import BlogPostsWrapper, { SecTitle } from './style';
+import * as React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import PostCardMinimal from "../../../components/post-card-minimal/post-card-minimal";
+import Pagination from "../../../components/pagination/pagination";
+import BlogPostsWrapper, { SecTitle } from "./style";
 
 type PostsProps = {};
 
@@ -57,7 +57,7 @@ const Posts: React.FunctionComponent<PostsProps> = () => {
 
   return (
     <BlogPostsWrapper>
-      <SecTitle>Leatest Stories</SecTitle>
+      <SecTitle>Latest Stories</SecTitle>
       {posts.map(({ node }: any) => {
         const title = node.frontmatter.title || node.fields.slug;
         return (
@@ -84,7 +84,7 @@ const Posts: React.FunctionComponent<PostsProps> = () => {
           totalPage={TotalPage}
         />
       ) : (
-        ''
+        ""
       )}
     </BlogPostsWrapper>
   );

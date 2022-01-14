@@ -1,12 +1,12 @@
-import * as React from 'react';
-import { Link } from 'gatsby';
-import { IoMdArrowRoundBack, IoMdArrowRoundForward } from 'react-icons/io';
+import * as React from "react";
+import { Link } from "gatsby";
+import { IoMdArrowRoundBack, IoMdArrowRoundForward } from "react-icons/io";
 import {
   PaginationWrapper,
   PrevPage,
   NextPage,
   PageNumber,
-} from './pagination.style';
+} from "./pagination.style";
 
 type PaginationProps = {
   prevLink?: string | undefined | null | boolean;

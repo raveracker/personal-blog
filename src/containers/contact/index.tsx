@@ -1,14 +1,14 @@
-import * as React from 'react';
-import { Formik, FormikProps, Form } from 'formik';
-import * as Yup from 'yup';
-import Input from '../../components/input/input';
-import Button from '../../components/button/button';
+import * as React from "react";
+import { Formik, FormikProps, Form } from "formik";
+import * as Yup from "yup";
+import Input from "../../components/input/input";
+import Button from "../../components/button/button";
 import {
   ContactWrapper,
   ContactPageTitle,
   ContactFromWrapper,
   InputGroup,
-} from './style';
+} from "./style";
 
 interface MyFormValues {
   firstName: string;
@@ -17,15 +17,15 @@ interface MyFormValues {
 }
 
 const SignupSchema = Yup.object().shape({
-  firstName: Yup.string().required('Required'),
-  email: Yup.string().email('Invalid email').required('Required'),
-  message: Yup.string().required('Required'),
+  firstName: Yup.string().required("Required"),
+  email: Yup.string().email("Invalid email").required("Required"),
+  message: Yup.string().required("Required"),
 });
 
 const Contact: React.SFC<{}> = () => {
   return (
     <Formik
-      initialValues={{ firstName: '', email: '', message: '' }}
+      initialValues={{ firstName: "", email: "", message: "" }}
       onSubmit={(values: MyFormValues, actions: any) => {
         setTimeout(() => {
           console.log({ values, actions });
@@ -66,7 +66,7 @@ const Contact: React.SFC<{}> = () => {
                     notification={`${
                       errors.firstName && touched.firstName
                         ? errors.firstName
-                        : ''
+                        : ""
                     }`}
                   />
                   <Input
@@ -77,7 +77,7 @@ const Contact: React.SFC<{}> = () => {
                     onBlur={handleBlur}
                     label="Email"
                     notification={`${
-                      errors.email && touched.email ? errors.email : ''
+                      errors.email && touched.email ? errors.email : ""
                     }`}
                   />
                 </InputGroup>
@@ -89,7 +89,7 @@ const Contact: React.SFC<{}> = () => {
                   onBlur={handleBlur}
                   label="Message"
                   notification={
-                    errors.message && touched.message ? errors.message : ''
+                    errors.message && touched.message ? errors.message : ""
                   }
                 />
                 <Button

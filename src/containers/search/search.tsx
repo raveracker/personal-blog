@@ -1,15 +1,15 @@
-import React, { useReducer, useEffect } from 'react';
-import SearchReducer, { initialState } from './search-reducer';
-import { useStaticQuery, graphql } from 'gatsby';
-import { Scrollbars } from 'react-custom-scrollbars';
-import { rebuildIndex } from './search-index-builder-function';
-import PostList from '../../components/post-list/post-list';
+import React, { useReducer, useEffect } from "react";
+import SearchReducer, { initialState } from "./search-reducer";
+import { useStaticQuery, graphql } from "gatsby";
+import { Scrollbars } from "react-custom-scrollbars";
+import { rebuildIndex } from "./search-index-builder-function";
+import PostList from "../../components/post-list/post-list";
 import {
   SearchWrapper,
   SearchForm,
   SearchResult,
   NoResult,
-} from './search.style';
+} from "./search.style";
 
 function Search() {
   const [state, dispatch] = useReducer(SearchReducer, initialState);
@@ -53,7 +53,7 @@ function Search() {
     const { search } = state;
     const queryResult = search.search(e.target.value);
     dispatch({
-      type: 'SET_SEARCH_QUERY',
+      type: "SET_SEARCH_QUERY",
       payload: { searchQuery: e.target.value, searchResults: queryResult },
     });
   };
@@ -71,11 +71,11 @@ function Search() {
         data.push(formatedData);
       });
 
-      dispatch({ type: 'SET_DATA', payload: data });
+      dispatch({ type: "SET_DATA", payload: data });
       const dataToSearch = rebuildIndex(data);
       if (dataToSearch) {
         dispatch({
-          type: 'SET_SEARCH',
+          type: "SET_SEARCH",
           payload: dataToSearch,
         });
       }
@@ -96,10 +96,10 @@ function Search() {
         />
       </SearchForm>
       <SearchResult>
-        {queryResults.length == 0 && searchQuery !== '' ? (
+        {queryResults.length == 0 && searchQuery !== "" ? (
           <NoResult>No result found</NoResult>
         ) : (
-          ''
+          ""
         )}
 
         {queryResults.length !== 0 && (
@@ -115,7 +115,9 @@ function Search() {
                   title={item.title}
                   url={item.slug}
                   image={
-                    item.cover == null ? null : item.cover.childImageSharp.gatsbyImageData
+                    item.cover == null
+                      ? null
+                      : item.cover.childImageSharp.gatsbyImageData
                   }
                   date={item.date}
                   tags={item.tags}

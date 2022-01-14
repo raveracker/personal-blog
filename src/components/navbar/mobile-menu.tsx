@@ -1,8 +1,8 @@
-import React, { useContext } from 'react';
-import { Link } from 'gatsby';
-import Drawer from '../drawer/drawer';
-import { DrawerContext } from '../drawer/drawer-context';
-import Menu from './menu';
+import React, { useContext } from "react";
+import { Link } from "gatsby";
+import Drawer from "../drawer/drawer";
+import { DrawerContext } from "../drawer/drawer-context";
+import Menu from "./menu";
 import {
   MobileMenuWrapper,
   DrawerContentWrapper,
@@ -10,8 +10,8 @@ import {
   DrawerLogo,
   DrawerClose,
   HamburgerIcon,
-} from './navbar.style';
-import { FiX } from 'react-icons/fi';
+} from "./navbar.style";
+import { FiX } from "react-icons/fi";
 
 type MobileMenuProps = {
   items: any;
@@ -28,7 +28,7 @@ const MobileMenu: React.FunctionComponent<MobileMenuProps> = ({
   // Toggle drawer
   const toggleDrawer = () => {
     dispatch({
-      type: 'TOGGLE',
+      type: "TOGGLE",
     });
   };
 

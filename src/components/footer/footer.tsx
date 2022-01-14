@@ -1,5 +1,5 @@
-import * as React from 'react';
-import FooterWrapper from './footer.style';
+import * as React from "react";
+import FooterWrapper from "./footer.style";
 
 type FooterProps = {
   children: React.ReactNode;

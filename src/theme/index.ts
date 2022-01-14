@@ -1,4 +1,4 @@
-import colors from "./colors"
+import colors from "./colors";
 
 export const theme = {
   breakpoints: [576, 768, 991, 1220],
@@ -43,4 +43,4 @@ export const theme = {
       },
     },
   },
-}
+};

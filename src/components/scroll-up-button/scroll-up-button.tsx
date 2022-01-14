@@ -1,6 +1,6 @@
-import React from 'react';
-import { IoMdArrowRoundUp } from 'react-icons/io';
-import ScrollUpButtonWrapper from './scroll-up-button.style';
+import React from "react";
+import { IoMdArrowRoundUp } from "react-icons/io";
+import ScrollUpButtonWrapper from "./scroll-up-button.style";
 
 interface ScrollUpButtonProps {}
 

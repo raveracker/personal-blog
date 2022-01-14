@@ -1,22 +1,22 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
 
 type ButtonStyleProps = {
   fullwidth?: boolean;
 };
 
-const ButtonStyle = styled('button')<ButtonStyleProps>`
+const ButtonStyle = styled("button")<ButtonStyleProps>`
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: ${themeGet('colors.white', '#fff')};
-  background-color: ${themeGet('colors.black', '#292929')};
-  height: ${themeGet('heights.2', '44')}px;
-  width: ${(props) => (props.fullwidth ? '100%' : 'auto')};
-  font-family: ${themeGet('fontFamily.0', "'Fira Sans', sans-serif")};
-  font-size: ${themeGet('fontSizes.3', '15')}px;
-  font-weight: ${themeGet('fontWeights.4', '500')};
+  color: ${themeGet("colors.white", "#fff")};
+  background-color: ${themeGet("colors.black", "#292929")};
+  height: ${themeGet("heights.2", "44")}px;
+  width: ${(props) => (props.fullwidth ? "100%" : "auto")};
+  font-family: ${themeGet("fontFamily.0", "'Fira Sans', sans-serif")};
+  font-size: ${themeGet("fontSizes.3", "15")}px;
+  font-weight: ${themeGet("fontWeights.4", "500")};
   text-decoration: none;
   padding-top: 0;
   padding-bottom: 0;
@@ -40,14 +40,14 @@ const ButtonStyle = styled('button')<ButtonStyleProps>`
   }
 
   &.disabled {
-    color: ${themeGet('inactiveColor', '#767676')};
-    background-color: ${themeGet('inactiveBG', '#e6e6e6')};
-    border-color: ${themeGet('inactiveBG', '#e6e6e6')};
+    color: ${themeGet("inactiveColor", "#767676")};
+    background-color: ${themeGet("inactiveBG", "#e6e6e6")};
+    border-color: ${themeGet("inactiveBG", "#e6e6e6")};
 
     &:hover {
-      color: ${themeGet('inactiveColor', '#767676')};
-      background-color: ${themeGet('inactiveBG', '#e6e6e6')};
-      border-color: ${themeGet('inactiveBG', '#e6e6e6')};
+      color: ${themeGet("inactiveColor", "#767676")};
+      background-color: ${themeGet("inactiveBG", "#e6e6e6")};
+      border-color: ${themeGet("inactiveBG", "#e6e6e6")};
     }
   }
 
@@ -59,6 +59,6 @@ const ButtonStyle = styled('button')<ButtonStyleProps>`
   }
 `;
 
-ButtonStyle.displayName = 'ButtonStyle';
+ButtonStyle.displayName = "ButtonStyle";
 
 export default ButtonStyle;

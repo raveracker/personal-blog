@@ -1,15 +1,14 @@
-require('dotenv').config({
+require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 
 module.exports = {
   siteMetadata: {
-    title: `StoryHub`,
-    author: `David`,
-    about: `Breakfast procuring no end happiness allowance assurance frank. Met simplicity nor difficulty unreserved who. Entreaties mr conviction dissimilar me
-    astonished estimating cultivated.`,
-    description: `A Gatsby Blog`,
-    siteUrl: `https://storyhub-minimal-tarex.redq.now.sh`,
+    title: `Allan Jeo`,
+    author: `Allan`,
+    about: `Curious guy surviving the odds by writing code and reading books. I believe success as an outcome of many failures, also fascinated by science and technology. My interests revolves around engineering the shit outta business, software, tech, design, love and life. This is my personal blog where I write about experiences, learnings, thoughts and ideas. SDE2 @ `,
+    description: `Raveracker's Blog`,
+    siteUrl: `https://raveracker.com`,
   },
   plugins: [
     {
@@ -114,18 +113,18 @@ module.exports = {
       resolve: `gatsby-plugin-lodash`,
     },
     {
-      resolve: 'gatsby-plugin-mailchimp',
+      resolve: "gatsby-plugin-mailchimp",
       options: {
         endpoint: process.env.MAILCHIMP_ENDPOINT, // add your MC list endpoint here; see instructions below
       },
     },
     {
-      resolve: 'gatsby-plugin-web-font-loader',
+      resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
           families: [
-            'Poppins:300,400,500,600,700',
-            'Fira Sans:100,300,400,500,600,700',
+            "Poppins:300,400,500,600,700",
+            "Fira Sans:100,300,400,500,600,700",
           ],
         },
       },

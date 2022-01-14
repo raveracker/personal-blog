@@ -1,8 +1,8 @@
-import React from 'react';
-import { graphql, PageProps } from 'gatsby';
-import Layout from '../components/layout';
-import PersonalBlog from '../containers/home';
-import SEO from '../components/seo';
+import React from "react";
+import { graphql, PageProps } from "gatsby";
+import Layout from "../components/layout";
+import PersonalBlog from "../containers/home";
+import SEO from "../components/seo";
 
 // Please note that you can use https://github.com/dotansimha/graphql-code-generator
 // to generate all types from graphQL schema
@@ -32,7 +32,7 @@ const IndexPage: React.FC<IndexPageProps> = (props) => {
   return (
     <Layout>
       <SEO
-        title="Personal Blog Minimal"
+        title="Personal Blog"
         description={data.site.siteMetadata.description}
       />
       <PersonalBlog />

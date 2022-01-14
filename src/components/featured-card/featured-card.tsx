@@ -1,7 +1,7 @@
-import * as React from 'react';
-import { Link } from 'gatsby';
-import _ from 'lodash';
-import GatsbyImage from '../gatsby-image';
+import * as React from "react";
+import { Link } from "gatsby";
+import _ from "lodash";
+import GatsbyImage from "../gatsby-image";
 import {
   FeaturedCardWrapper,
   PostPreview,
@@ -11,7 +11,7 @@ import {
   PostMeta,
   ReadMore,
   Excerpt,
-} from './featured-card.style';
+} from "./featured-card.style";
 
 interface FeaturedCardProps {
   image?: any;
@@ -33,10 +33,10 @@ const FeaturedCard: React.FunctionComponent<FeaturedCardProps> = ({
   overlay,
   ...props
 }) => {
-  const addClass = ['featured_card'];
+  const addClass = ["featured_card"];
 
   if (overlay == true) {
-    addClass.push('overlay');
+    addClass.push("overlay");
   }
 
   if (className) {
@@ -44,7 +44,7 @@ const FeaturedCard: React.FunctionComponent<FeaturedCardProps> = ({
   }
 
   return (
-    <FeaturedCardWrapper className={addClass.join(' ')} {...props}>
+    <FeaturedCardWrapper className={addClass.join(" ")} {...props}>
       {image == null ? null : (
         <PostPreview className="post_preview">
           <Link to={url}>
@@ -70,10 +70,10 @@ const FeaturedCard: React.FunctionComponent<FeaturedCardProps> = ({
           <Link to={url}>{title}</Link>
         </PostTitle>
         {overlay == true ? (
-          ''
+          ""
         ) : (
           <>
-            {' '}
+            {" "}
             {description && (
               <Excerpt
                 dangerouslySetInnerHTML={{
@@ -86,7 +86,7 @@ const FeaturedCard: React.FunctionComponent<FeaturedCardProps> = ({
         )}
 
         <ReadMore className="read_more">
-          <Link to={url}>{overlay == true ? 'Read Story' : 'Read More'}</Link>
+          <Link to={url}>{overlay == true ? "Read Story" : "Read More"}</Link>
         </ReadMore>
       </PostDetails>
     </FeaturedCardWrapper>

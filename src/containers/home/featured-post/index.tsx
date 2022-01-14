@@ -1,12 +1,12 @@
-import * as React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import FeaturedCard from '../../../components/featured-card/featured-card';
+import * as React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import FeaturedCard from "../../../components/featured-card/featured-card";
 import {
   FeaturedPostWrapper,
   FeaturedPostRow,
   FeaturedPostCol,
   SecTitle,
-} from './style';
+} from "./style";
 
 type FeaturedPostsProps = {};
 

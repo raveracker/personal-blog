@@ -1,5 +1,5 @@
-import React from 'react';
-import InputWrapper from './input.style';
+import React from "react";
+import InputWrapper from "./input.style";
 
 type InputProps = {
   id?: any;
@@ -41,7 +41,7 @@ const Input: React.FC<InputProps> = ({
   ...props
 }) => {
   // Add all classs to an array
-  const addAllClasses: string[] = ['field-wrapper'];
+  const addAllClasses: string[] = ["field-wrapper"];
 
   // className prop checking
   if (className) {
@@ -50,7 +50,7 @@ const Input: React.FC<InputProps> = ({
 
   // Add disabled class
   if (disabled) {
-    addAllClasses.push('disabled');
+    addAllClasses.push("disabled");
   }
 
   // Init variable for Label For and Input element
@@ -58,7 +58,7 @@ const Input: React.FC<InputProps> = ({
 
   // Make Label value to htmlFor
   if (label) {
-    htmlFor = label.replace(/\s+/g, '_').toLowerCase();
+    htmlFor = label.replace(/\s+/g, "_").toLowerCase();
   }
 
   // Label Field
@@ -69,7 +69,7 @@ const Input: React.FC<InputProps> = ({
 
   // Set Input element based on type prop
   switch (type) {
-    case 'textarea':
+    case "textarea":
       inputElement = (
         <div className="inner-wrap">
           <textarea
@@ -115,7 +115,7 @@ const Input: React.FC<InputProps> = ({
 
   return (
     <InputWrapper
-      className={`${addAllClasses.join(' ')}`}
+      className={`${addAllClasses.join(" ")}`}
       style={containerStyle}
     >
       {labelField || secondaryComponent ? (
@@ -123,7 +123,7 @@ const Input: React.FC<InputProps> = ({
           {labelField} {secondaryComponent}
         </div>
       ) : (
-        ''
+        ""
       )}
       {inputElement}
       {notificationMessage}

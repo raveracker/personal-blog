@@ -1,8 +1,8 @@
 ---
 title: Documentation for React Projects
-date: '2019-05-24'
-tags: ['javascript', 'markdown']
-cover: './preview.jpg'
+date: "2019-05-24"
+tags: ["javascript", "markdown"]
+cover: "./preview.jpg"
 ---
 
 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas congue venenatis odio a commodo. Praesent semper turpis tincidunt urna vestibulum, et rutrum sem porta. Curabitur varius, purus sit amet consequat rhoncus, dolor arcu rhoncus nibh, quis porta ex metus vehicula mi. Nunc pellentesque cursus enim, et bibendum ex varius id. Sed fringilla lacus metus, a condimentum felis suscipit in. Praesent dictum lorem ut ex facilisis, at facilisis justo vulputate. Suspendisse mollis magna augue, vitae imperdiet tellus efficitur sit amet. Morbi hendrerit iaculis ante sed semper. Suspendisse nunc ante, condimentum egestas tincidunt vel, vehicula sed enim. Vestibulum dictum ut orci id fringilla. Nullam et mi porta, pretium nisl ut, porta neque. Mauris hendrerit nibh non diam semper consequat. Ut vel sollicitudin ex. Fusce a tortor eget lacus mattis volutpat et rutrum elit. In sollicitudin varius ornare.
@@ -15,18 +15,18 @@ Donec et lacus sollicitudin, consequat leo sit amet, faucibus quam. Quisque frin
 
 ```js
 function Employee(firstName, lastName) {
-  this.firstName = firstName
-  this.lastName = lastName
+  this.firstName = firstName;
+  this.lastName = lastName;
 }
 
-Employee.prototype.fullName = function() {
-  return this.firstName + ' ' + this.lastName
-}
+Employee.prototype.fullName = function () {
+  return this.firstName + " " + this.lastName;
+};
 
-var employee1 = new Employee('Martin', 'Roy')
-var employee2 = new Employee('Duke', 'William')
-document.writeln(employee1.fullName() + '<br>')
-document.writeln(employee2.fullName())
+var employee1 = new Employee("Martin", "Roy");
+var employee2 = new Employee("Duke", "William");
+document.writeln(employee1.fullName() + "<br>");
+document.writeln(employee2.fullName());
 ```
 
 Aliquam erat volutpat. Proin accumsan vulputate turpis. Aenean at justo risus. Nullam et rhoncus leo. Cras sit amet dictum ipsum. Aliquam eu neque mauris. Morbi neque urna, molestie in magna sed, commodo accumsan est. Fusce eu nisl eget orci semper vulputate. Aliquam tempor mi non laoreet facilisis. Sed ac felis libero. Suspendisse et gravida libero. Maecenas eget vehicula enim. Pellentesque pellentesque elit mattis fermentum interdum. Maecenas auctor vehicula rutrum. Donec pellentesque ante at nunc porta hendrerit.

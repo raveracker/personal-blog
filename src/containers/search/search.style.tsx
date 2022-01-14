@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
 
 export const SearchWrapper = styled.div`
   display: block;
@@ -16,7 +16,7 @@ export const SearchForm = styled.form`
     width: 100%;
     font-size: 21px;
     font-weight: normal;
-    color: ${themeGet('colors.textColor', '#292929')};
+    color: ${themeGet("colors.textColor", "#292929")};
     border: 0;
     background: transparent;
     &:focus {

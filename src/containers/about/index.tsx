@@ -1,41 +1,41 @@
-import * as React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import GatsbyImage from '../../components/gatsby-image';
-import SocialProfile from '../../components/social-profile/social-profile';
+import * as React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import GatsbyImage from "../../components/gatsby-image";
+import SocialProfile from "../../components/social-profile/social-profile";
 import {
   IoLogoFacebook,
   IoLogoTwitter,
   IoLogoInstagram,
   IoLogoLinkedin,
-} from 'react-icons/io';
+} from "react-icons/io";
 import {
   AboutWrapper,
   AboutImage,
   AboutPageTitle,
   AboutDetails,
   SocialProfiles,
-} from './style';
+} from "./style";
 
 const SocialLinks = [
   {
     icon: <IoLogoFacebook />,
-    url: 'https://www.facebook.com/redqinc/',
-    tooltip: 'Facebook',
+    url: "https://www.facebook.com/redqinc/",
+    tooltip: "Facebook",
   },
   {
     icon: <IoLogoInstagram />,
-    url: 'https://www.instagram.com/redqinc/',
-    tooltip: 'Instagram',
+    url: "https://www.instagram.com/redqinc/",
+    tooltip: "Instagram",
   },
   {
     icon: <IoLogoTwitter />,
-    url: 'https://twitter.com/redqinc',
-    tooltip: 'Twitter',
+    url: "https://twitter.com/redqinc",
+    tooltip: "Twitter",
   },
   {
     icon: <IoLogoLinkedin />,
-    url: 'https://www.linkedin.com/company/redqinc/',
-    tooltip: 'Linked In',
+    url: "https://www.linkedin.com/company/redqinc/",
+    tooltip: "Linked In",
   },
 ];
 
@@ -74,7 +74,10 @@ const About: React.FunctionComponent<AboutProps> = () => {
       </AboutPageTitle>
 
       <AboutImage>
-        <GatsbyImage src={Data.avatar.childImageSharp.gatsbyImageData} alt="about" />
+        <GatsbyImage
+          src={Data.avatar.childImageSharp.gatsbyImageData}
+          alt="about"
+        />
       </AboutImage>
 
       <AboutDetails>

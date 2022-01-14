@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import addToMailchimp from 'gatsby-plugin-mailchimp';
-import Input from '../input/input';
-import Button from '../button/button';
+import React, { useState } from "react";
+import addToMailchimp from "gatsby-plugin-mailchimp";
+import Input from "../input/input";
+import Button from "../button/button";
 import {
   NewsletterWrapper,
   NewsletterInnerWrapper,
@@ -10,14 +10,14 @@ import {
   NewsletterInputWrapper,
   ErrorMessage,
   SuccessMessage,
-} from './newsletter.style';
+} from "./newsletter.style";
 
 type NewsletterProps = {};
 
 const Newsletter: React.FunctionComponent<NewsletterProps> = ({ ...props }) => {
-  const [email, setEmail] = useState('');
-  const [success, setSuccess] = useState('');
-  const [error, setError] = useState('');
+  const [email, setEmail] = useState("");
+  const [success, setSuccess] = useState("");
+  const [error, setError] = useState("");
   const handleChange = (e: any) => {
     setEmail(e.target.value);
   };
@@ -26,17 +26,17 @@ const Newsletter: React.FunctionComponent<NewsletterProps> = ({ ...props }) => {
     e.preventDefault();
     addToMailchimp(email) // listFields are optional if you are only capturing the email address.
       .then(({ msg, result }: any) => {
-        if (result !== 'success') {
+        if (result !== "success") {
           throw msg;
         }
         setSuccess(msg);
-        setError('');
-        setEmail('');
+        setError("");
+        setEmail("");
       })
       .catch((err: any) => {
         setError(err);
-        setSuccess('');
-        setEmail('');
+        setSuccess("");
+        setEmail("");
       });
   };
   return (

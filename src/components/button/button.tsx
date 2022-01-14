@@ -1,5 +1,5 @@
-import React from 'react';
-import ButtonStyle from './button.style';
+import React from "react";
+import ButtonStyle from "./button.style";
 
 type ButtonProps = {
   title: string;
@@ -11,8 +11,8 @@ type ButtonProps = {
   className?: string;
   fullwidth?: boolean;
   style?: any;
-  type?: 'button' | 'submit' | 'reset';
-  iconPosition?: 'left' | 'right';
+  type?: "button" | "submit" | "reset";
+  iconPosition?: "left" | "right";
 };
 
 const Button: React.FC<ButtonProps> = ({
@@ -30,15 +30,15 @@ const Button: React.FC<ButtonProps> = ({
   ...props
 }) => {
   // Add all classs to an array
-  const addAllClasses: string[] = ['button'];
+  const addAllClasses: string[] = ["button"];
 
   // isLoading prop checking
   if (disabled) {
-    addAllClasses.push('disabled');
+    addAllClasses.push("disabled");
   }
 
   if (isLoading) {
-    addAllClasses.push('is-loading');
+    addAllClasses.push("is-loading");
   }
 
   // className prop checking
@@ -49,13 +49,13 @@ const Button: React.FC<ButtonProps> = ({
   // Checking button loading state
   const buttonIcon =
     isLoading == true ? (
-      <>{loader ? loader : 'loading....'}</>
+      <>{loader ? loader : "loading...."}</>
     ) : (
       icon && <span className="btn-icon">{icon}</span>
     );
 
   // set icon position
-  const position: string = iconPosition || 'right';
+  const position: string = iconPosition || "right";
 
   const LoadingIcon = () => {
     return (
@@ -98,7 +98,7 @@ const Button: React.FC<ButtonProps> = ({
   return (
     <ButtonStyle
       type={type}
-      className={addAllClasses.join(' ')}
+      className={addAllClasses.join(" ")}
       disabled={disabled}
       icon-position={position}
       onClick={onClick}
@@ -106,9 +106,9 @@ const Button: React.FC<ButtonProps> = ({
       style={style}
       {...props}
     >
-      {position === 'left' && buttonIcon}
+      {position === "left" && buttonIcon}
       {title && !isLoading && <span className="btn-text">{title}</span>}
-      {position === 'right' && buttonIcon}
+      {position === "right" && buttonIcon}
       {isLoading && <LoadingIcon />}
     </ButtonStyle>
   );
@@ -117,7 +117,7 @@ const Button: React.FC<ButtonProps> = ({
 Button.defaultProps = {
   disabled: false,
   isLoading: false,
-  type: 'button',
+  type: "button",
 };
 
 export default Button;
