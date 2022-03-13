@@ -11,13 +11,13 @@ import {
   FacebookShareButton,
   TwitterShareButton,
   PinterestShareButton,
-  RedditShareButton,
+  RedditShareButton
 } from "react-share";
 import {
   IoLogoFacebook,
   IoLogoTwitter,
   IoLogoPinterest,
-  IoLogoReddit,
+  IoLogoReddit
 } from "react-icons/io";
 import {
   BlogPostDetailsWrapper,
@@ -28,7 +28,7 @@ import {
   BlogPostFooter,
   PostShare,
   PostTags,
-  BlogPostComment,
+  BlogPostComment
 } from "./templates.style";
 
 const BlogPostTemplate = (props: any) => {
@@ -41,7 +41,7 @@ const BlogPostTemplate = (props: any) => {
 
   const disqusConfig = {
     shortname: process.env.GATSBY_DISQUS_NAME,
-    config: { identifier: slug, title },
+    config: { identifier: slug, title }
   };
   return (
     <Layout>
