@@ -1,15 +1,20 @@
 {
   "cSpell.words": [
     "AVIF",
+    "codertag",
     "Fira",
     "frontmatter",
+    "gamertag",
     "katex",
     "mailchimp",
+    "Pinterest",
     "prismjs",
     "Raveracker",
     "Raveracker's",
     "Stackoverflow",
     "stickynode",
+    "urljoin",
     "WEBP"
-  ]
+  ],
+  "editor.formatOnSave": true
 }

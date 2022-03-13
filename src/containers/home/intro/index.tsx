@@ -7,13 +7,13 @@ import {
   IntroImage,
   IntroTitle,
   Description,
-  IntroInfo,
+  IntroInfo
 } from "./style";
 import {
   IoLogoTwitter,
   IoLogoInstagram,
   IoLogoGithub,
-  IoLogoReddit,
+  IoLogoReddit
 } from "react-icons/io";
 import { ImStackoverflow } from "react-icons/im";
 
@@ -23,28 +23,28 @@ const SocialLinks = [
   {
     icon: <IoLogoInstagram />,
     url: "https://www.instagram.com/allanjeo",
-    tooltip: "Instagram",
+    tooltip: "Instagram"
   },
   {
     icon: <IoLogoTwitter />,
     url: "https://twitter.com/allan_jeo",
-    tooltip: "Twitter",
+    tooltip: "Twitter"
   },
   {
     icon: <IoLogoGithub />,
     url: "https://github.com/raveracker",
-    tooltip: "Github",
+    tooltip: "Github"
   },
   {
     icon: <IoLogoReddit />,
     url: "https://www.reddit.com/user/Secure-Letterhead-39",
-    tooltip: "Reddit",
+    tooltip: "Reddit"
   },
   {
     icon: <ImStackoverflow />,
     url: "https://stackoverflow.com/users/12510072/allan-joseph",
-    tooltip: "Stack Overflow",
-  },
+    tooltip: "Stack Overflow"
+  }
 ];
 
 const Intro: React.FunctionComponent<IntroProps> = () => {

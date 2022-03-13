@@ -12,7 +12,7 @@ import HeaderWrapper, {
   NavSearchButton,
   NavSearchWrapper,
   SearchCloseButton,
-  NavSearchFromWrapper,
+  NavSearchFromWrapper
 } from "./navbar.style";
 import LogoImage from "../../images/logo.png";
 
@@ -23,20 +23,20 @@ type NavbarProps = {
 const MenuItems = [
   {
     label: "Home",
-    url: "/",
+    url: "/"
   },
   {
     label: "About",
-    url: "/about",
-  },
-  {
-    label: "Contact",
-    url: "/contact",
-  },
-  {
-    label: "404 Page",
-    url: "/404",
-  },
+    url: "/about"
+  }
+  // {
+  //   label: "Contact",
+  //   url: "/contact",
+  // },
+  // {
+  //   label: "404 Page",
+  //   url: "/404",
+  // },
 ];
 
 const Navbar: React.FunctionComponent<NavbarProps> = ({
@@ -45,13 +45,13 @@ const Navbar: React.FunctionComponent<NavbarProps> = ({
 }) => {
   const [state, setState] = useState({
     toggle: false,
-    search: "",
+    search: ""
   });
 
   const toggleHandle = () => {
     setState({
       ...state,
-      toggle: !state.toggle,
+      toggle: !state.toggle
     });
   };
 
